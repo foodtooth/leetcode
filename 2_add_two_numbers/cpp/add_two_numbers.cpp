@@ -17,7 +17,7 @@
  */
 class Solution {
  public:
-  ListNode* addTwoNumbers2(ListNode* l1, ListNode* l2) {
+  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     ListNode *result = new ListNode(0);
     ListNode *head = result;
     int carry = 0;
@@ -43,7 +43,7 @@ class Solution {
     return head;
   }
 
-  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+  ListNode* addTwoNumbers2(ListNode* l1, ListNode* l2) {
     carry /= 10;
     if (!l1 && !l2 && !carry) {
       return nullptr;
