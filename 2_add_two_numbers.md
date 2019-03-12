@@ -1,12 +1,8 @@
-/*
- * add_two_numbers.cpp
- *
- *  Created on: Jan 16, 2019
- *      Author: dx
- *
- * https://leetcode.com/problems/add-two-numbers/
- */
+https://leetcode.com/problems/add-two-numbers/
 
+## Code
+
+```cpp
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -67,4 +63,4 @@ class Solution {
   }
   int carry { 0 };
 };
-
+```

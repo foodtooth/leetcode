@@ -1,10 +1,8 @@
-/*
- * reverse_integer.cpp
- *
- *  Created on: Jan 30, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/reverse-integer/
 
+## Code
+
+```cpp
 #include <cstdint>
 #include <cinttypes>
 
@@ -27,3 +25,4 @@ class Solution {
     return result;
   }
 };
+```

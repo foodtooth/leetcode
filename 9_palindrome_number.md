@@ -1,10 +1,8 @@
-/*
- * palindrome_number.cpp
- *
- *  Created on: Feb 19, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/palindrome-number/
 
+## Code
+
+```cpp
 #include <string>
 
 class Solution {
@@ -53,3 +51,4 @@ class Solution {
     return result;
   }
 };
+```

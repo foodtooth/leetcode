@@ -1,13 +1,8 @@
-/*
- * regular_expression_matching.cpp
- *
- *  Created on: Feb 20, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/regular-expression-matching/
 
-#include <string>
-#include <vector>
+## Code
 
+```cpp
 class Solution {
  public:
   // DP
@@ -61,3 +56,4 @@ class Solution {
     }
   }
 };
+```

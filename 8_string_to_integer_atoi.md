@@ -1,10 +1,8 @@
-/*
- * string_to_integer_atoi.cpp
- *
- *  Created on: Feb 13, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/string-to-integer-atoi/
 
+## Code
+
+```cpp
 #include <cstdio>
 #include <cstdint>
 
@@ -60,3 +58,4 @@ class Solution {
     return result;
   }
 };
+```

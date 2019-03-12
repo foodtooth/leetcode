@@ -1,10 +1,8 @@
-/*
- * median_of_two_sorted_arrays.cpp
- *
- *  Created on: Jan 18, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/median-of-two-sorted-arrays/
 
+## Code
+
+```cpp
 #include <vector>
 
 class Solution {
@@ -37,3 +35,4 @@ class Solution {
       return nums[(len + 1) / 2 - 1] * 1.0;
   }
 };
+```

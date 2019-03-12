@@ -1,10 +1,8 @@
-/*
- * zigzag_conversion.cpp
- *
- *  Created on: Jan 25, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/zigzag-conversion/
 
+## Code
+
+```cpp
 #include <vector>
 #include <string>
 using namespace std;
@@ -105,3 +103,4 @@ class Solution {
     }
   }
 };
+```

@@ -1,10 +1,8 @@
-/*
- * longest_substring_without_repeating_characters.cpp
- *
- *  Created on: Jan 17, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+## Code
+
+```cpp
 #include <unordered_set>
 #include <algorithm>
 
@@ -31,3 +29,4 @@ class Solution {
     return result;
   }
 };
+```

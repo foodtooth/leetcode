@@ -1,10 +1,8 @@
-/*
- * longest_palindromic_substring.cpp
- *
- *  Created on: Jan 22, 2019
- *      Author: dx
- */
+https://leetcode.com/problems/longest-palindromic-substring/
 
+## Code
+
+```cpp
 #include <string>
 
 class Solution {
@@ -75,3 +73,4 @@ class Solution {
       return true;
   }
 };
+```
