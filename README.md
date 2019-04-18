@@ -11,3 +11,8 @@
 ####  Backtracking
 
 * [17_letter_combinations_of_a_phone_number](./17_letter_combinations_of_a_phone_number.md)
+* [22_generate_parentheses](./22_generate_parentheses.md)
+
+### Catalan number
+
+* [22_generate_parentheses](./22_generate_parentheses.md)
