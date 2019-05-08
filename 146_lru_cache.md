@@ -1,9 +1,9 @@
 https://leetcode.com/problems/lru-cache/
 
 ## Idea
-涉及**O(1)**的时间要求，考虑用**map**（由[Hash table](https://en.wikipedia.org/wiki/Hash_table)实现）。
+涉及 **O(1)** 的时间要求，考虑用**map**（由[**Hash table**](https://en.wikipedia.org/wiki/Hash_table)实现）。
 
-涉及**list like**数据结构的操作要求**O(1)**的，考虑**[Doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list)**。
+涉及**list like**数据结构的操作要求 **O(1)** 的，考虑[**Doubly linked list**](https://en.wikipedia.org/wiki/Doubly_linked_list)。
 
 ## Code
 
