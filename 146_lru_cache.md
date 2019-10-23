@@ -36,7 +36,9 @@ class LRUCache {
 
   void put(decltype(key_) key, decltype(value_) value) {
     if (tracker_.count(key) != 0) {
+      // Update existing k-v in tracker_
       tracker_.at(key)->second = value;
+      // Move used item to front
       kvs_.splice(kvs_.begin(), kvs_, tracker_.at(key));
     } else {
       if (kvs_.size() == capacity_) {
