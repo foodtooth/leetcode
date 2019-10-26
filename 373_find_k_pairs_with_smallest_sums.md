@@ -12,7 +12,7 @@ We can sort all of them in a priority_queue and pick.
 由于全量的排序操作，元素移位操作等损耗很大。针对这$m \times n$对数的排列（这个矩阵），可以直接考虑出方法找出当前候选值中的小值，然后往复到结束条件。
 
 ## Code
-1. Straight forward:
+### Straight forward
 ```cpp
 class Solution {
  public:
@@ -40,7 +40,7 @@ class Solution {
 };
 ```
 
-2. Smart one
+### Smart one
 ```cpp
 class Solution {
  public:
