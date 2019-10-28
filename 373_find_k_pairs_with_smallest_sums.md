@@ -1,7 +1,7 @@
 ---
 title: 373. Find K Pairs with Smallest Sums
 tags: leetcode
-disqus: foodtooths-hackmd
+disqus: foodtoothshackmd
 ---
 
 https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
