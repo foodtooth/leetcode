@@ -3,6 +3,8 @@ title: 256. Paint House
 tags: leetcode
 ---
 
+[![hackmd-github-sync-badge](https://hackmd.io/8rc55QRnRAm5wnic3N96sw/badge)](https://hackmd.io/8rc55QRnRAm5wnic3N96sw)
+
 https://leetcode.com/problems/paint-house
 
 ## Idea
