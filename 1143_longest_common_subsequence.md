@@ -3,6 +3,8 @@ title: 1143. Longest Common Subsequence
 tags: leetcode
 ---
 
+[![hackmd-github-sync-badge](https://hackmd.io/q8uUZ6QbQTmvjX6CkcxuzQ/badge)](https://hackmd.io/q8uUZ6QbQTmvjX6CkcxuzQ)
+
 https://leetcode.com/problems/longest-common-subsequence/
 
 ## Idea
