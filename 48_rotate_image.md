@@ -1,25 +1,57 @@
+---
+title: 48. Rotate Image
+tags: leetcode
+---
+
 https://leetcode.com/problems/rotate-image/
 
 ## Idea
-Clockwise 90 degrees rotation.
 
-按圈轮换。每圈需要轮换(边长 - 1 - 圈数)次。两个变量决定循环的方式和要交换的变量。
+### Straight forward
 
-[Smart one](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image) from leetcode, which I do not really understand the theory behind.
+旋转，很直白的方式就是想象成轮子在转。在矩阵中，就是每一层ring中，把每个item swap三次
+
+### Common tips for rotation
+
+可以通过两次翻转达成旋转的效果，顺逆时针都可以。详见下面代码及注释
 
 ## Code
-```cpp
+
+```cpp=
 class Solution {
  public:
+  /*
+   * clockwise rotation:
+   * first reverse up to down, then swap the symmetry
+   * 1 2 3    7 8 9    7 4 1
+   * 4 5 6 => 4 5 6 => 8 5 2
+   * 7 8 9    1 2 3    9 6 3
+   */
   void rotate(vector<vector<int>>& matrix) {
-    int edge_len = matrix[0].size();
-    for (int circle = 0; circle < edge_len / 2; ++circle) {
-      for (int step = circle; step < edge_len - 1 - circle; ++step) {
-        std::swap(matrix[circle][step], matrix[edge_len - 1 - step][circle]);
-        std::swap(matrix[edge_len - 1 - step][circle],
-                  matrix[edge_len - 1 - circle][edge_len - 1 - step]);
-        std::swap(matrix[edge_len - 1 - circle][edge_len - 1 - step],
-                  matrix[step][edge_len - 1 - circle]);
+    std::reverse(matrix.begin(), matrix.end());
+    int row_size = matrix.size();
+    int col_size = matrix[0].size();
+    for (int i{}; i < row_size; ++i) {
+      for (int j{i + 1}; j < col_size; ++j) {
+        std::swap(matrix[i][j], matrix[j][i]);
+      }
+    }
+  }
+
+  /*
+   * anticlockwise rotation:
+   * first reverse left to right, then swap the symmetry
+   * 1 2 3     3 2 1     3 6 9
+   * 4 5 6  => 6 5 4  => 2 5 8
+   * 7 8 9     9 8 7     1 4 7
+   */
+  void anti_rotate(vector<vector<int>>& matrix) {
+    for (auto const& v : matrix) std::reverse(v.begin(), v.end());
+    int row_size = matrix.size();
+    int col_size = matrix[0].size();
+    for (int i{}; i < row_size; ++i) {
+      for (int j{i + 1}; j < col_size; ++j) {
+        std::swap(matrix[i][j], matrix[j][i]);
       }
     }
   }
