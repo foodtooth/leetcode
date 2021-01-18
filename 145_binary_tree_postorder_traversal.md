@@ -7,6 +7,12 @@ https://leetcode.com/problems/binary-tree-postorder-traversal/
 
 ## Idea
 
+### 后记
+
+三序遍历已经完成，最简单易懂的Recursive，需要细致考虑访问顺序的Iteration都已经完成。可以看出，Recursive中两个连续Recursive的调用也只是stack的形式而已，所以催生前序和后序那两个类似的写法；而如果非Recursive操作掺杂其中，比如中序，反而比较复杂。
+
+这里再说一个Morris Traversal，它就是把二叉树偏向一个方向，从而达到不让非Recursive的访问操作插在中间的效果。简单说比如，遇到有左子树的根节点，就把根节点作为左子树的最右节点的右孩子（这样会保证大小关系）
+
 ## Code
 
 ```cpp=
