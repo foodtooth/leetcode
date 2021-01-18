@@ -70,6 +70,7 @@ class Solution {
       if (n->right != nullptr) stack.push(n->right);
     }
     // 或者前面result不用vector而是一个stack，在此挨个放入最终vector（即通过一个stack反转）
+    // 亦或是在上面插入时直接从前插入（使用deque）
     std::reverse(result.begin(), result.end());
   }
 };
