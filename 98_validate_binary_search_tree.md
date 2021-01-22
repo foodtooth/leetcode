@@ -8,38 +8,31 @@ https://leetcode.com/problems/validate-binary-search-tree/
 ## Idea
 
 ## Code
-1. Iterative in-order traversal
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
- public:
-  bool isValidBST(TreeNode *root) { return creeper(root); }
 
-  bool creeper(TreeNode *node) {
-    std::stack<TreeNode *> s{};
-    long min = std::numeric_limits<long>::min();
-    while (!s.empty() || node != NULL) {
-      while (node != NULL) {
-        s.push(node);
-        node = node->left;
+1. Iterative in-order traversal
+
+    ```cpp=
+    class Solution {
+     public:
+      bool isValidBST(TreeNode *root) { return creeper(root); }
+
+      bool creeper(TreeNode *node) {
+        std::stack<TreeNode *> s{};
+        long min = std::numeric_limits<long>::min();
+        while (!s.empty() || node != NULL) {
+          while (node != NULL) {
+            s.push(node);
+            node = node->left;
+          }
+          node = s.top();
+          s.pop();
+          if (node->val <= min)
+            return false;
+          else
+            min = node->val;
+          node = node->right;
+        }
+        return true;
       }
-      node = s.top();
-      s.pop();
-      if (node->val <= min)
-        return false;
-      else
-        min = node->val;
-      node = node->right;
-    }
-    return true;
-  }
-};
-```
+    };
+    ```
